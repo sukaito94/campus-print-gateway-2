@@ -1,0 +1,71 @@
+# =========================
+# Campus Print Gateway
+# =========================
+
+# Local configuration / secrets
+*.local
+*.local.*
+config.local.*
+*.local.env
+*.pem
+*.key
+
+# Runtime logs
+logs/
+*.log
+
+# Print spool / received jobs
+spool/
+received_jobs/
+temp/
+tmp/
+*.spool
+
+# Received or generated print files
+*.pdf
+*.ps
+*.pcl
+*.xps
+*.bin
+
+# Allow safe sample files if explicitly placed under samples/
+!samples/
+!samples/**/*.pdf
+!samples/**/*.txt
+!samples/**/*.md
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# MySQL backup / dump files
+*.dump.sql
+*.backup.sql
+*.bak.sql
+database/backups/
+database/local/
+
+# Windows helper build outputs
+*.exe
+*.msi
+*.dll
+*.pdb
+*.zip
+*.7z
+*.rar
+
+# PyInstaller / packaging outputs
+release/
+artifacts/
+
+# Local runtime state
+*.pid
+*.lock
+runtime/
+state/
+
+# CUPS / print inspection outputs
+cups-debug/
+print-debug/
+received-samples/

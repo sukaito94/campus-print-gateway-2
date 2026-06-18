@@ -32,7 +32,7 @@ The Linux Gateway is responsible for:
 - Analyzing basic print information such as page count and copies.
 - Sending `pending_job` events to Windows Helper.
 - Receiving username/password confirmation from Windows Helper.
-- Verifying credentials against MySQL `password_hash`.
+- Verifying credentials against PostgreSQL `password_hash`.
 - Checking account status and remaining quota.
 - Rejecting locked accounts.
 - Recording print jobs and job events.
@@ -94,7 +94,7 @@ Responsibilities:
 
 ### `auth_service`
 
-Verifies username/password using MySQL-stored password hashes.
+Verifies username/password using PostgreSQL-stored password hashes.
 
 Important rule:
 
@@ -115,7 +115,7 @@ Expected account states:
 
 ### `print_logger`
 
-Writes print job and job event records to MySQL.
+Writes print job and job event records to PostgreSQL.
 
 ### `cups_submitter`
 

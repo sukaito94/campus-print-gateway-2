@@ -69,3 +69,8 @@ state/
 cups-debug/
 print-debug/
 received-samples/
+
+# Environment secrets
+.env
+.env.*
+!.env.example

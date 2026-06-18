@@ -1,6 +1,8 @@
 # Database Schema
 
-The system uses MySQL for user accounts, password hashes, print jobs, and event logs.
+The system uses PostgreSQL for user accounts, password hashes, print jobs, quota/balance records, and event logs.
+
+PostgreSQL is treated as the persistent authority for account state and print job state. The Windows Helper must not directly access PostgreSQL.
 
 ## users
 

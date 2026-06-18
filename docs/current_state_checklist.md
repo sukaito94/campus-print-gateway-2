@@ -24,7 +24,7 @@ Use this checklist to inspect the existing Linux-side system before implementati
 - [ ] Record CUPS queue name.
 - [ ] Record duplex / color / copies options.
 
-## MySQL
+## PostgreSQL
 
 - [ ] Identify database name.
 - [ ] Inspect users table.

@@ -170,10 +170,10 @@ The minimum viable version should support:
 - Linux analyzing page count and basic job information.
 - Windows Helper maintaining a persistent Control Channel.
 - Per-document username/password input.
-- MySQL credential validation using `password_hash`.
+- PostgreSQL credential validation using `password_hash`.
 - Displaying remaining quota/balance before confirmation.
 - User confirmation or cancellation.
-- Job logging in MySQL.
+- Job logging in PostgreSQL.
 - CUPS submission after confirmation.
 - Quota update after job submission.
 - Account locking after overprint.
@@ -205,7 +205,7 @@ Recommended development order:
 3. Test what format Windows sends to Linux.
 4. Implement a fake Control Channel MVP.
 5. Implement Windows Helper MVP.
-6. Implement MySQL schema and test users.
+6. Implement PostgreSQL schema and test users.
 7. Implement Print Receiver.
 8. Implement Job Analyzer.
 9. Implement CUPS Submitter.

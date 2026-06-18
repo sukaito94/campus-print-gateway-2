@@ -17,7 +17,7 @@ Spool + Analyze
         ↓
 Windows Helper Confirmation
         ↓
-MySQL Account / Log
+PostgreSQL Account / Log
         ↓
 CUPS
         ↓
@@ -112,9 +112,11 @@ A lightweight local application that keeps a persistent connection to the Linux 
 
 The core backend. It receives print data, creates job records, spools files, analyzes basic job metadata, requests confirmation through Windows Helper, validates credentials, records logs, updates quota, and submits approved jobs to CUPS.
 
-### MySQL
+### PostgreSQL
 
 Stores users, password hashes, account status, remaining quota/balance, print jobs, and job events.
+
+PostgreSQL is the persistent authority for account state, print job state, quota/balance updates, and audit logs.
 
 ### CUPS
 

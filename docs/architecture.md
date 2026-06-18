@@ -15,7 +15,7 @@ Control Channel
         ↓
 Windows Helper Confirmation
         ↓
-MySQL Account / Log
+PostgreSQL Account / Log
         ↓
 CUPS
         ↓
@@ -57,7 +57,7 @@ Responsibilities:
 - Update quota and lock accounts when needed.
 - Clean up temporary files.
 
-### MySQL
+### PostgreSQL
 
 Stores users, password hashes, quota/balance, account status, print jobs, and job events.
 

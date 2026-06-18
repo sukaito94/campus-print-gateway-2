@@ -4,7 +4,7 @@
 
 ### Goal
 
-Inspect existing Linux-side services, ports, CUPS setup, MySQL schema, spool directories, and logs.
+Inspect existing Linux-side services, ports, CUPS setup, PostgreSQL schema, spool directories, and logs.
 
 ### Output
 
@@ -12,7 +12,7 @@ Inspect existing Linux-side services, ports, CUPS setup, MySQL schema, spool dir
 - CUPS queue name
 - Port list
 - Service list
-- MySQL schema dump
+- PostgreSQL schema dump
 
 ### Acceptance Criteria
 
@@ -58,11 +58,11 @@ The two-way control channel works without real printing.
 
 ---
 
-## Task: MySQL Schema
+## Task: PostgreSQL Schema
 
 ### Goal
 
-Create initial MySQL schema for users, print jobs, and job events.
+Create initial PostgreSQL schema for users, print jobs, and job events.
 
 ### Output
 

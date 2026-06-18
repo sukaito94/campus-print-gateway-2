@@ -10,7 +10,7 @@
 6. Linux sends a `pending_job` event to Windows Helper.
 7. Windows Helper shows login and confirmation UI.
 8. User enters username and password.
-9. Linux validates credentials against MySQL `password_hash`.
+9. Linux validates credentials against PostgreSQL `password_hash`.
 10. Linux checks account status and remaining quota.
 11. Helper shows job information and current quota.
 12. User confirms the job.

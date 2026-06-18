@@ -1,6 +1,6 @@
 # Linux Gateway
 
-The Linux Gateway is the central authority of the Campus Print Gateway system. It receives print data from Windows, temporarily spools documents, coordinates per-job user confirmation through Windows Helper, validates accounts using MySQL, records print logs, and submits confirmed jobs to CUPS.
+The Linux Gateway is the central authority of the Campus Print Gateway system. It receives print data from Windows, temporarily spools documents, coordinates per-job user confirmation through Windows Helper, validates accounts using PostgreSQL, records print logs, and submits confirmed jobs to CUPS.
 
 ## Role in the System
 
@@ -13,7 +13,7 @@ Spool + Analyze
         ↓
 Control Channel → Windows Helper
         ↓
-MySQL Auth / Account / Log
+PostgreSQL Auth / Account / Log
         ↓
 CUPS Submitter
         ↓
@@ -141,7 +141,7 @@ Expected fields:
 
 ```env
 DB_HOST=localhost
-DB_PORT=3306
+DB_PORT=5432
 DB_USER=print_gateway
 DB_PASSWORD=change_me
 DB_NAME=campus_print
@@ -170,7 +170,7 @@ JOB_TTL_SECONDS=300
 ## MVP Development Order
 
 1. Implement Control Server with fake `pending_job`.
-2. Implement MySQL connection.
+2. Implement PostgreSQL connection.
 3. Implement credential verification.
 4. Implement job logging.
 5. Implement CUPS submitter.

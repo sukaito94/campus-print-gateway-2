@@ -39,7 +39,7 @@ tmp/
 *.sqlite3
 *.db
 
-# MySQL backup / dump files
+# Database backup / dump files
 *.dump.sql
 *.backup.sql
 *.bak.sql

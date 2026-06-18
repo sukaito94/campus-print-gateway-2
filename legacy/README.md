@@ -46,7 +46,7 @@ Linux Print Gateway
         ↓
 Windows Helper Confirmation
         ↓
-MySQL Account / Log
+PostgreSQL Account / Log
         ↓
 CUPS
         ↓

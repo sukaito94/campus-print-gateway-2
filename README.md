@@ -1,6 +1,6 @@
 # Campus Print Gateway
 
-A Windows-native campus print gateway using a Linux authorization layer, MySQL account records, and a CUPS backend.
+A Windows-native campus print gateway using a Linux authorization layer, PostgreSQL account records, and a CUPS backend.
 
 ## Project Overview
 
